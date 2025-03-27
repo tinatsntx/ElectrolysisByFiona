@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrolysis by Fiona</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blush: #d8a5a5;
+      --gold: #b58e51;
+      --cream: #fefaf6;
+      --text: #3b3b3b;
+    }
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+    }
+    header {
+      background: var(--blush);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo img {
+      height: 60px;
+      border-radius: 12px;
+    }
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    header p {
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: var(--gold);
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    .cta-button {
+      background: var(--gold);
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .lead-magnet {
+      background: var(--blush);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--gold);
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Electrolysis by Fiona Logo">
+      <span class="logo-text">Electrolysis by Fiona</span>
+    </div>
+    <p>Permanently smooth skin, effortlessly yours.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#book">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Feel confident in your skin</h2>
+    <p>Specializing in permanent hair removal in a private, comfortable setting.</p>
+    <button class="cta-button" onclick="location.href='mailto:electrolysisbyfiona@gmail.com'">Book Now</button>
+  </section>
+
+  <section id="about">
+    <h2>Meet Fiona</h2>
+    <p>Fiona is a licensed electrologist passionate about helping clients achieve smooth, hair-free skin. Her practice is located in a beautifully appointed private room inside her downtown Dallas apartment. Fiona offers a relaxing experience with precision-focused care and top-tier equipment.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Facial Electrolysis</li>
+      <li>Body Electrolysis</li>
+      <li>Consultations (Free for first-time clients)</li>
+    </ul>
+  </section>
+
+  <section class="lead-magnet">
+    <h2>New to Electrolysis?</h2>
+    <p>Download our free guide: "5 Things to Know Before Your First Electrolysis Session"</p>
+    <button class="cta-button">Get the Free Guide</button>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Studio</h2>
+    <img src="IMAGE1.jpg" alt="Treatment room photo 1">
+    <img src="IMAGE2.jpg" alt="Treatment room photo 2">
+    <img src="IMAGE3.jpg" alt="Treatment room photo 3">
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:electrolysisbyfiona@gmail.com">electrolysisbyfiona@gmail.com</a></p>
+    <p>Dallas, TX 75202</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Electrolysis by Fiona. All rights reserved.
+  </footer>
+</body>
+</html>
