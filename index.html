@@ -83,6 +83,12 @@
       border-radius: 10px;
       margin-top: 2rem;
     }
+    .lead-magnet h2 {
+      margin-bottom: 0.5rem;
+    }
+    .lead-magnet p {
+      margin-bottom: 2rem;
+    }
     .profile-img {
       display: block;
       margin: 2rem auto 1rem;
@@ -127,12 +133,25 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    .mailchimp-form {
+    .mailchimp-form form {
       background-color: white;
-      padding: 2rem;
-      margin-top: 2rem;
+      padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .mailchimp-form input[type="email"],
+    .mailchimp-form input[type="text"] {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .mailchimp-form input::placeholder {
+      color: #aaa;
     }
     footer {
       text-align: center;
@@ -185,12 +204,8 @@
     <div class="mailchimp-form">
       <form action="https://github.us2.list-manage.com/subscribe/post?u=da9dc135c1291dddb94d7bd2f&amp;id=93261604eb&amp;f_id=002944e0f0" method="post" target="_blank">
         <input type="hidden" name="redirect" value="https://tinatstnx.github.io/ElectrolysisByFiona/thank-you.html">
-        <label for="mce-EMAIL">Email Address *</label><br>
-        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required style="margin: 8px 0; padding: 10px; width: 100%; max-width: 400px;">
-        <br>
-        <label for="mce-FNAME">First Name</label><br>
-        <input type="text" name="FNAME" id="mce-FNAME" style="margin: 8px 0; padding: 10px; width: 100%; max-width: 400px;">
-        <br>
+        <input type="email" name="EMAIL" required placeholder="Your email address">
+        <input type="text" name="FNAME" placeholder="Your first name (optional)">
         <input type="submit" value="Send Me the Guide" class="cta-button">
       </form>
     </div>
