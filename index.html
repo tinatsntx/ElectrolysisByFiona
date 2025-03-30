@@ -127,6 +127,13 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    .mailchimp-form {
+      background-color: white;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -175,7 +182,18 @@
   <section class="lead-magnet">
     <h2>New to Electrolysis?</h2>
     <p>Download our free guide: "5 Things to Know Before Your First Electrolysis Session"</p>
-    <button class="cta-button">Get the Free Guide</button>
+    <div class="mailchimp-form">
+      <form action="https://github.us2.list-manage.com/subscribe/post?u=da9dc135c1291dddb94d7bd2f&amp;id=93261604eb&amp;f_id=002944e0f0" method="post" target="_blank">
+        <input type="hidden" name="redirect" value="https://tinatstnx.github.io/ElectrolysisByFiona/thank-you.html">
+        <label for="mce-EMAIL">Email Address *</label><br>
+        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required style="margin: 8px 0; padding: 10px; width: 100%; max-width: 400px;">
+        <br>
+        <label for="mce-FNAME">First Name</label><br>
+        <input type="text" name="FNAME" id="mce-FNAME" style="margin: 8px 0; padding: 10px; width: 100%; max-width: 400px;">
+        <br>
+        <input type="submit" value="Send Me the Guide" class="cta-button">
+      </form>
+    </div>
   </section>
 
   <section class="gallery">
