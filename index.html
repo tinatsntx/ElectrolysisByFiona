@@ -18,14 +18,16 @@
       text-align: center;
     }
     header img {
-      width: 100px;
+      width: 140px;
     }
     nav {
       background-color: #b58e51;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     nav a {
-      display: inline-block;
       color: white;
       text-decoration: none;
       padding: 1em;
@@ -37,10 +39,6 @@
     }
     .hero h1 {
       font-size: 2em;
-      color: #333;
-    }
-    .hero p {
-      font-size: 1.1em;
     }
     .button {
       background-color: #b58e51;
@@ -50,15 +48,23 @@
       border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
     .section {
       padding: 2em;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
     .section h2 {
       color: #333;
       font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .gallery iframe {
+      width: 100%;
+      border: none;
+      overflow: hidden;
     }
     footer {
       background-color: #d8a5a5;
@@ -84,54 +90,43 @@
   <section class="hero">
     <h1>Feel confident in your skin</h1>
     <p>Specializing in permanent hair removal in a private, comfortable setting.</p>
-    <a href="https://www.fresha.com/book-now/electrolysisbyfiona-gjs111a4/all-offer?share&pId=2509499" target="_blank"><button class="button">Book Now</button></a>
+    <a class="button" href="https://www.fresha.com/book-now/electrolysisbyfiona-gjs111a4/all-offer?share&pId=2509499" target="_blank">Book Now</a>
   </section>
 
   <section id="about" class="section">
     <h2>Discover Fiona Electrolysis – Where Confidence Begins and Beauty Lasts</h2>
-    <p>
-      Experience the gold standard in permanent hair removal with certified electrologist Fiona, right in the heart of Downtown Dallas (<a href="https://www.google.com/maps/place/75202" target="_blank">75202</a>). At Fiona Electrolysis, every detail is crafted to offer you more than just a service — it’s an experience.
-    </p>
-    <p>
-      From the moment you arrive, you’ll enjoy the ease of free parking, the comfort of a beautifully maintained space, and the peace of mind that comes with FDA-approved technology. Each session is delivered with expert precision, personalized attention, and the highest hygiene standards.
-    </p>
-    <p>
-      <strong>What truly sets Fiona Electrolysis apart?</strong><br/>
-      • Unmatched value with super affordable pricing — more accessible than most clinics, without compromising quality.<br/>
-      • A luxury-level experience where you feel relaxed, respected, and completely cared for.<br/>
-      • A commitment to results — because your smooth, hair-free skin is our ultimate goal.
-    </p>
-    <p>
-      Don’t wait to feel confident in your skin.<br/>
-      <strong>Limited-time pricing available — book your transformation today!</strong>
-    </p>
+    <p>Experience the gold standard in permanent hair removal with certified electrologist Fiona, right in the heart of Downtown Dallas (<a href="https://www.google.com/maps/place/75202" target="_blank">75202</a>). At Fiona Electrolysis, every detail is crafted to offer you more than just a service — it’s an experience.</p>
+    <p>From the moment you arrive, you’ll enjoy the ease of free parking, the comfort of a beautifully maintained space, and the peace of mind that comes with FDA-approved technology. Each session is delivered with expert precision, personalized attention, and the highest hygiene standards.</p>
+    <p><strong>What truly sets Fiona Electrolysis apart?</strong><br>
+      • Unmatched value with super affordable pricing — more accessible than most clinics, without compromising quality.<br>
+      • A luxury-level experience where you feel relaxed, respected, and completely cared for.<br>
+      • A commitment to results — because your smooth, hair-free skin is our ultimate goal.</p>
+    <p><strong>Don’t wait to feel confident in your skin.<br>Limited-time pricing available — book your transformation today!</strong></p>
   </section>
 
   <section id="services" class="section">
-    <h2>Services – <strong>Popular Treatment Areas</strong></h2>
-    <p><strong>Face:</strong><br/>
-      • Upper Lip<br/>
-      • Chin<br/>
-      • Cheeks<br/>
-      • Jawline<br/>
-      • Sideburns<br/>
-      • Eyebrows
-    </p>
-    <p><strong>Body:</strong><br/>
-      • Underarms<br/>
-      • Bikini Line & Full Bikini<br/>
-      • Legs<br/>
-      • Arms<br/>
-      • Back<br/>
-      • Chest<br/>
-      • Stomach<br/>
-      • Hands & Feet
-    </p>
+    <h2>Popular Treatment Areas</h2>
+    <p><strong>Face:</strong><br>
+      • Upper Lip<br>
+      • Chin<br>
+      • Cheeks<br>
+      • Jawline<br>
+      • Sideburns<br>
+      • Eyebrows</p>
+    <p><strong>Body:</strong><br>
+      • Underarms<br>
+      • Bikini Line & Full Bikini<br>
+      • Legs<br>
+      • Arms<br>
+      • Back<br>
+      • Chest<br>
+      • Stomach<br>
+      • Hands & Feet</p>
     <p><strong>Custom treatment plans available</strong> for combination areas and long-term goals.</p>
   </section>
 
   <section class="section">
-    <h2>Benefits – <strong>Why Choose Fiona Electrolysis?</strong></h2>
+    <h2>Why Choose Fiona Electrolysis?</h2>
     <ul>
       <li>100% Permanent Hair Removal</li>
       <li>Works on All Hair Colors & Skin Tones</li>
@@ -141,6 +136,23 @@
       <li>No Ingrowns. No Downtime.</li>
       <li>Super Affordable | Limited-Time Offers</li>
     </ul>
+  </section>
+
+  <section id="leadmagnet" class="section" style="background:#d8a5a5; border-radius:10px; text-align:center;">
+    <h2 style="color:white;">New to Electrolysis?</h2>
+    <p style="color:white;">Download our free guide: “5 Things to Know Before Your First Electrolysis Session”</p>
+    <form action="https://formsubmit.co/electrolysisbyfiona@gmail.com" method="POST" style="background:white; padding:1em; max-width:500px; margin:1em auto; border-radius:8px;">
+      <input type="text" name="name" placeholder="Your Name" required style="width:90%; padding:0.5em; margin-bottom:1em;">
+      <input type="email" name="email" placeholder="Your Email" required style="width:90%; padding:0.5em; margin-bottom:1em;">
+      <input type="hidden" name="_next" value="https://electrolysisbyfiona.com/thank-you.html">
+      <button class="button" type="submit">Send Me the Guide</button>
+    </form>
+  </section>
+
+  <section class="section gallery">
+    <h2>Our Work on Instagram</h2>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe src="https://cdn.lightwidget.com/widgets/cb6066a08159540390be39fc2cc343c3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;height:400px;"></iframe>
   </section>
 
   <footer>
