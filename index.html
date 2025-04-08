@@ -1,256 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Electrolysis by Fiona</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --blush: #d8a5a5;
-      --gold: #b58e51;
-      --cream: #fefaf6;
-      --text: #3b3b3b;
-    }
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
       font-family: 'Raleway', sans-serif;
-      background-color: var(--cream);
-      color: var(--text);
+      background-color: #fdf7f2;
+      color: #3b3b3b;
     }
     header {
-      background: var(--blush);
-      color: white;
-      padding: 1rem;
+      background-color: #d8a5a5;
+      padding: 1em 0;
       text-align: center;
     }
-    .logo img {
-      max-height: 180px;
-      max-width: 300px;
-      width: auto;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+    header img {
+      width: 100px;
     }
     nav {
-      background: var(--gold);
+      background-color: #b58e51;
       text-align: center;
-      padding: 1rem;
     }
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
-      margin: 0 0.5rem;
+      padding: 1em;
       font-weight: bold;
-      display: inline-block;
-    }
-    section {
-      padding: 1.5rem;
-      max-width: 1000px;
-      margin: auto;
     }
     .hero {
+      padding: 2em;
       text-align: center;
-      background: white;
-      border-radius: 10px;
-      padding: 2rem 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
+    .hero h1 {
+      font-size: 2em;
+      color: #333;
     }
-    .cta-button {
-      background: var(--gold);
+    .hero p {
+      font-size: 1.1em;
+    }
+    .button {
+      background-color: #b58e51;
       color: white;
-      padding: 0.75rem 2rem;
+      padding: 0.8em 2em;
       border: none;
       border-radius: 5px;
-      font-size: 1rem;
+      font-weight: bold;
       cursor: pointer;
-      margin-top: 1rem;
     }
-    .lead-magnet {
-      background: var(--blush);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-radius: 10px;
-      margin-top: 2rem;
-    }
-    .mailchimp-form form {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 10px;
-      max-width: 500px;
+    .section {
+      padding: 2em;
+      max-width: 800px;
       margin: 0 auto;
     }
-    .mailchimp-form input[type="email"],
-    .mailchimp-form input[type="text"] {
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .profile-img {
-      display: block;
-      margin: 2rem auto 1rem;
-      max-width: 200px;
-      width: 100%;
-      border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .testimonial-carousel {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      text-align: center;
-    }
-    .testimonial-carousel blockquote {
-      font-style: italic;
-      font-size: 1.1rem;
-    }
-    .testimonial-carousel .author {
-      margin-top: 1rem;
-      font-weight: bold;
-      color: var(--gold);
-    }
-    .testimonial-carousel .controls button {
-      background: var(--blush);
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    iframe.lightwidget-widget {
-      width: 100%;
-      min-height: 300px;
+    .section h2 {
+      color: #333;
+      font-size: 1.5em;
     }
     footer {
+      background-color: #d8a5a5;
       text-align: center;
-      padding: 2rem 1rem;
-      background: var(--gold);
+      padding: 1em;
       color: white;
-    }
-    @media screen and (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-      .hero h2, section h2 {
-        font-size: 1.5rem;
-      }
-      .cta-button {
-        width: 100%;
-      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="/LOGO.PNG" alt="Electrolysis by Fiona Logo">
-    </div>
-    <p>Permanently smooth skin, effortlessly yours.</p>
+    <img src="LOGO.PNG" alt="Electrolysis by Fiona logo" />
+    <p>Permanently smooth skin. Effortlessly yours.</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="https://www.fresha.com/book-now/electrolysisbyfiona-gjs111a4/all-offer?share&pId=2509499" target="_blank">Book</a>
+    <a href="#book">Book</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
-    <h2>Feel confident in your skin</h2>
+    <h1>Feel confident in your skin</h1>
     <p>Specializing in permanent hair removal in a private, comfortable setting.</p>
-    <button class="cta-button" onclick="location.href='https://www.fresha.com/book-now/electrolysisbyfiona-gjs111a4/all-offer?share&pId=2509499'">Book Now</button>
+    <a href="https://www.fresha.com/book-now/electrolysisbyfiona-gjs111a4/all-offer?share&pId=2509499" target="_blank"><button class="button">Book Now</button></a>
   </section>
 
-  <section id="about">
-    <h2>Meet Fiona</h2>
-    <img class="profile-img" src="/SHARONPROFILE.JPEG" alt="Fiona profile image">
-    <p>Fiona is a licensed electrologist passionate about helping clients achieve smooth, hair-free skin. Her practice is located in a beautifully appointed private room inside her downtown Dallas apartment. Fiona offers a relaxing experience with precision-focused care and top-tier equipment.</p>
+  <section id="about" class="section">
+    <h2>Discover Fiona Electrolysis – Where Confidence Begins and Beauty Lasts</h2>
+    <p>
+      Experience the gold standard in permanent hair removal with certified electrologist Fiona, right in the heart of Downtown Dallas (<a href="https://www.google.com/maps/place/75202" target="_blank">75202</a>). At Fiona Electrolysis, every detail is crafted to offer you more than just a service — it’s an experience.
+    </p>
+    <p>
+      From the moment you arrive, you’ll enjoy the ease of free parking, the comfort of a beautifully maintained space, and the peace of mind that comes with FDA-approved technology. Each session is delivered with expert precision, personalized attention, and the highest hygiene standards.
+    </p>
+    <p>
+      <strong>What truly sets Fiona Electrolysis apart?</strong><br/>
+      • Unmatched value with super affordable pricing — more accessible than most clinics, without compromising quality.<br/>
+      • A luxury-level experience where you feel relaxed, respected, and completely cared for.<br/>
+      • A commitment to results — because your smooth, hair-free skin is our ultimate goal.
+    </p>
+    <p>
+      Don’t wait to feel confident in your skin.<br/>
+      <strong>Limited-time pricing available — book your transformation today!</strong>
+    </p>
   </section>
 
-  <section id="services">
-    <h2>Services</h2>
+  <section id="services" class="section">
+    <h2>Services – <strong>Popular Treatment Areas</strong></h2>
+    <p><strong>Face:</strong><br/>
+      • Upper Lip<br/>
+      • Chin<br/>
+      • Cheeks<br/>
+      • Jawline<br/>
+      • Sideburns<br/>
+      • Eyebrows
+    </p>
+    <p><strong>Body:</strong><br/>
+      • Underarms<br/>
+      • Bikini Line & Full Bikini<br/>
+      • Legs<br/>
+      • Arms<br/>
+      • Back<br/>
+      • Chest<br/>
+      • Stomach<br/>
+      • Hands & Feet
+    </p>
+    <p><strong>Custom treatment plans available</strong> for combination areas and long-term goals.</p>
+  </section>
+
+  <section class="section">
+    <h2>Benefits – <strong>Why Choose Fiona Electrolysis?</strong></h2>
     <ul>
-      <li>Facial Electrolysis</li>
-      <li>Body Electrolysis</li>
-      <li>Consultations (Free for first-time clients)</li>
+      <li>100% Permanent Hair Removal</li>
+      <li>Works on All Hair Colors & Skin Tones</li>
+      <li>Gentle, Precise & Personalized Treatments</li>
+      <li>Ideal for PCOS & Hormonal Hair</li>
+      <li>FDA-Approved & Hygienic</li>
+      <li>No Ingrowns. No Downtime.</li>
+      <li>Super Affordable | Limited-Time Offers</li>
     </ul>
   </section>
 
-  <section class="lead-magnet">
-    <h2>New to Electrolysis?</h2>
-    <p>Download our free guide: "5 Things to Know Before Your First Electrolysis Session"</p>
-    <div class="mailchimp-form">
-      <form action="https://formsubmit.co/0dc5e37f35537a226be4768199acd85a" method="POST">
-        <input type="hidden" name="_next" value="https://electrolysisbyfiona.com/thank-you.html">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="email" name="email" required placeholder="Your email address">
-        <input type="text" name="name" placeholder="Your first name (optional)">
-        <input type="submit" value="Send Me the Guide" class="cta-button">
-      </form>
-    </div>
-  </section>
-
-  <section class="gallery">
-    <h2>Our Work on Instagram</h2>
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe src="https://cdn.lightwidget.com/widgets/cb6066a08159540390be39fc2cc343c3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-  </section>
-
-  <section class="testimonial-carousel">
-    <h2>Client Testimonials</h2>
-    <div class="slide active">
-      <blockquote>“Fiona was so kind and professional. My skin has never felt smoother!”</blockquote>
-      <div class="author">— Jessica R.</div>
-    </div>
-    <div class="slide">
-      <blockquote>“The atmosphere was peaceful and clean. I felt instantly at ease.”</blockquote>
-      <div class="author">— Maria L.</div>
-    </div>
-    <div class="slide">
-      <blockquote>“After only a few sessions, I noticed a real difference. Highly recommend!”</blockquote>
-      <div class="author">— Dana K.</div>
-    </div>
-    <div class="controls">
-      <button onclick="showTestimonial(-1)">&larr;</button>
-      <button onclick="showTestimonial(1)">&rarr;</button>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:electrolysisbyfiona@gmail.com">electrolysisbyfiona@gmail.com</a></p>
-    <p>Dallas, TX 75202</p>
-  </section>
-
   <footer>
-    &copy; 2025 Electrolysis by Fiona. All rights reserved.
+    &copy; 2025 Electrolysis by Fiona | Downtown Dallas, TX 75202
   </footer>
-
-  <script>
-    let current = 0;
-    const slides = document.querySelectorAll('.testimonial-carousel .slide');
-    function showTestimonial(step) {
-      slides[current].classList.remove('active');
-      current = (current + step + slides.length) % slides.length;
-      slides[current].classList.add('active');
-    }
-  </script>
 </body>
 </html>
